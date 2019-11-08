@@ -9,11 +9,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+  // return an array
+  // 1st element is the sum of the numbers
+  // 2nd element is The sum of 4 and 7 is 11.
+  var answer = a+b;
+  // template literal
+  var newSent = `The sum of ${a} and ${b} is ${answer}.`;
+  var sent = 'The sum of ' + a + ' and ' + b + ' is ' + answer + '.';
+  var returnArray = [answer, newSent];
+  return returnArray;
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+ testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
